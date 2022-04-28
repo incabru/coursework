@@ -1,0 +1,31 @@
+.boxes .main_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Creating the boxes */
+.animals_list, .verbs_list, .link_1, .link_2 {
+    flex: 1;
+    background: #f97a17;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 40px 40px;
+    padding: 40px 40px;
+}
+
+/* Removing the hyperlink */
+.link_1 a, .link_2 a {
+    text-decoration: underline;
+    color: black;
+    font-size: x-large;
+}
+
+/* Creating two columns to sotre the list contents */
+.animals_list ul, .verbs_list ul{
+    column-count: 2;
+}
+.animals_list li, .verbs_list li {
+    text-align: left;
+}
+

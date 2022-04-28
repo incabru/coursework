@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Changing the font of the text in the website */
+body {
+    font-family: 'Mitr', sans-serif;
+    font-size: 20px;
+}
+
+/* Navigation bar design including the list*/
+.navbar{
+    background-color: white;
+    color: black;
+}
+
+.navbar a {
+    text-decoration: solid;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar_container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_container ul {
+    display: flex;
+}
+.navbar_container ul li {
+    margin: 30px;
+    margin-left: 200px;
+    list-style: none;
+}
+
+.navbar_container ul li a{
+    color: black;
+}
+
+/* Background for the header, that includes the logo */
+.header {
+    background-color: #f97a17;
+    color: black;
+    min-height: 300px;
+}
+
+/* Changing the size of the image */
+.header img{
+    max-width: 300px;
+}
+
+/* Changing the position of the image */
+.header_img {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.boxes .main_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Design for the three boxes */
+.introduction, .benefits, .goals {
+    flex: 1;
+    background: #f89142;
+    /* background: #ffa600ec; */
+    text-align: center;
+    align-items: center;
+    border-style: dashed;
+    border-radius: 10px;
+    margin: 40px 40px;
+    padding: 40px 40px;
+}
+
+/* Moving the text to the left hand side */
+.benefits li {
+    text-align: left;
+}
+
+.boxes_two {
+    background-color: #f97a17;
+    color: black;
+    min-height: 300px;
+    padding: 40px;
+}
+
+
+.categories_home, .benefits1, .goals1 {
+    flex: 1; 
+    background: white;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    border-style: dashed;
+    margin: 40px 40px;
+    padding: 40px 40px;
+}
+
+.categories_home ul {
+    columns: 2;
+    text-align: center;
+    list-style: none;
+}

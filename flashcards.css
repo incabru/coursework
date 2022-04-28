@@ -1,0 +1,43 @@
+
+body {
+    font-family: 'Mitr', sans-serif;
+    font-size: 20px;
+}
+
+/* Design elements for the boxes created */
+.boxes .main_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Design elements for each individual box */
+.animals, .verbs, .phrases, .items {
+    flex: 1;
+    background: #f97a17;
+    text-align: center;
+    border-radius: 10px;
+    margin: 40px 40px;
+    padding: 40px 40px;
+}
+
+/* Removing the hyperlinks */
+.animals a, .verbs a, .items a, .phrases a {
+    text-decoration: solid;
+    color: black;
+}
+
+/* Design elements for the picture placed underneath the text  */
+#par1 #animal, #par2 #verb, #par3 #item {
+    height: 100px;
+}
+
+/* Design elements for the picture placed underneath the text  */
+#par4 #hello {
+    height: 120px;
+}
+
+@media(max-width: 600px) {
+    .boxes .main_container{
+        display: block;
+    }
+} 

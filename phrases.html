@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css"/>  
+        <link rel="stylesheet" href="animals.css"/>
+        <link rel="stylesheet" href="phrases.css"/>
+        <script src="animals.js"></script>
+        <title>Quizzity</title>
+    </head>
+    <body>
+        <!-- Navigation bar stays the same throughout the website and includes links to each part of the website -->
+        <nav class="navbar">
+            <div class="navbar_container">
+                <ul class="nav_buttons">
+                    <li>
+                        <a href="index.html"> HOME</a>
+                    </li>
+                    <li>
+                        <a href="Flashcards.html">FLASHCARDS</a>
+                    </li>
+                    <li>
+                        <a href="Vocabulary.html">VOCABULARY</a>
+                    </li>
+                    <li>
+                        <a href="About.html"> ABOUT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="boxes">
+            <div class="main_container">
+                <div class="box1" id="box_1">
+                    <h2>I am</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/called.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer()"> Show Answer</button>
+                    <button id="hide" onclick="hide()"> Hide Answer</button>
+                    <button id="next" onclick="next()"> Next Flashcard</button>
+                    <div id="answer">
+                        <br>
+                        <h2>Estoy / Yo Soy</h2>
+                        <br>
+                    </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Yo...</span>
+                    </div>
+                </div>
+                <div class="box2" id="box_2">
+                    <h2>How?</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/como.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer2()"> Show Answer</button>
+                    <button id="hide" onclick="hide2()"> Hide Answer</button>
+                    <button id="next" onclick="next2()"> Next Flashcard</button>
+                    <div id="answer2">
+                        <br>
+                        <h2>Como?</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="box3" id="box_3">
+                    <h2>Happy Birthday</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/cumple.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer3()"> Show Answer</button>
+                    <button id="hide" onclick="hide3()"> Hide Answer</button>
+                    <button id="next" onclick="next3()"> Next Flashcard</button>
+                    <div id="answer3">
+                        <br>
+                        <h2>Feliz Cumpleanos</h2>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="boxes2">
+            <div class="main_container2">
+                <div class="box1" id="box_4">
+                    <h2>Good Morning</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/goodmorning.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer4()"> Show Answer</button>
+                    <button id="hide" onclick="hide4()"> Hide Answer</button>
+                    <button id="next" onclick="next4()"> Next Flashcard</button>
+                    <div id="answer4">
+                        <br>
+                        <br>
+                        <h2>Buenos Dias</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="box2" id="box_5">
+                    <h2>Goodnight</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/goodnight.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer5()"> Show Answer</button>
+                    <button id="hide" onclick="hide5()"> Hide Answer</button>
+                    <button id="next" onclick="next5()"> Next Flashcard</button>
+                    <div id="answer5">
+                        <br>
+                        <h2>Buenas Noches</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="box3" id="box_6">
+                    <h2>Hello</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/hello.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer6()"> Show Answer</button>
+                    <button id="hide" onclick="hide6()"> Hide Answer</button>
+                    <button id="next" onclick="next6()"> Next Flashcard</button>
+                    <div id="answer6">
+                        <br>
+                        <h2>Hola</h2>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="boxes3">
+            <div class="main_container3">
+                <div class="box1" id="box_7">
+                    <h2>Do you speak English?</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/idontknow.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer7()"> Show Answer</button>
+                    <button id="hide" onclick="hide7()"> Hide Answer</button>
+                    <button id="next" onclick="next7()"> Next Flashcard</button>
+                    <div id="answer7">
+                        <br>
+                        <h2>Hablas ingles?</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="box2" id="box_8">
+                    <h2>I love you</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/love.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer8()"> Show Answer</button>
+                    <button id="hide" onclick="hide8()"> Hide Answer</button>
+                    <button id="next" onclick="next8()"> Next Flashcard</button>
+                    <div id="answer8">
+                        <br>
+                        <h2>Te amo</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="box3" id="box_9">
+                    <h2>Pleased to meet you</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/meet.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer9()"> Show Answer</button>
+                    <button id="hide" onclick="hide9()"> Hide Answer</button>
+                    <button id="next" onclick="next9()"> Next Flashcard</button>
+                    <div id="answer9">
+                        <br>
+                        <h2>Encantado de conocerle</h2>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="boxes4">
+            <div class="main_container4">
+                <div class="box1" id="box_10">
+                    <h2>What time is it?</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/time.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer10()"> Show Answer</button>
+                    <button id="hide" onclick="hide10()"> Hide Answer</button>
+                    <button id="next" onclick="next10()"> Next Flashcard</button>
+                    <div id="answer10">
+                        <br>
+                        <h2>Que hora es?</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="box2" id="box_11">
+                    <h2>I have</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/welcome.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer11()"> Show Answer</button>
+                    <button id="hide" onclick="hide11()"> Hide Answer</button>
+                    <button id="next" onclick="next11()"> Next Flashcard</button>
+                    <div id="answer11">
+                        <br>
+                        <h2>Yo tengo</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="box3" id="box_12">
+                    <h2>Where are you from?</h2>
+                    <p>
+                        <br>
+                        <img src="Images/phrases/where.gif" id="ape">
+                        <br>
+                        <br>
+                    </p>
+                    <button id="submit" onclick="answer12()"> Show Answer</button>
+                    <button id="hide" onclick="hide12()"> Hide Answer</button>
+                    <button id="next" onclick="next12()"> Next Flashcard</button>
+                    <div id="answer12">
+                        <br>
+                        <h2>De donde eres?</h2>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
