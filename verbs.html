@@ -1,3 +1,6 @@
+<!-- @author: Sergio Rodriguez Chavez -->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,19 +34,28 @@
                 </ul>
             </div>
         </nav>
+         <!-- Section including the different flashcards for items -->
         <section class="boxes">
+            <!-- Audio added to buttons on screen -->
+            <!-- Sound sourced from, https://mixkit.co/free-sound-effects/misc/?page=2 -->
+            <audio id="sound1" src="Sound/mixkit-water-bubble-1317.wav" preload="auto"></audio>
+            <audio id="sound2" src="Sound/mixkit-set-down-jelly-jar-3148.wav" preload="auto"></audio>
+            <audio id="sound3" src="Sound/mixkit-water-drop-splashes-in-cave-3179.wav" preload="auto"></audio>
             <div class="main_container">
                 <div class="box1" id="box_1">
                     <h2>Break</h2>
                     <p>
                         <br>
+                        <!-- Images sourced from https://www.enchantedlearning.com/Spanish/ -->
                         <img src="Images/verbs/break.gif" id="ape">
                         <br>
                         <br>
                     </p>
+                    <!-- Buttons shown to the user -->
                     <button id="submit" onclick="answer()"> Show Answer</button>
                     <button id="hide" onclick="hide()"> Hide Answer</button>
                     <button id="next" onclick="next()"> Next Flashcard</button>
+                    <!-- Correct Answer -->
                     <div id="answer">
                         <br>
                         <h2>Romper</h2>

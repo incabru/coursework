@@ -1,3 +1,6 @@
+<!-- @author: Sergio Rodriguez Chavez -->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -31,27 +34,37 @@
                 </ul>
             </div>
         </nav>
+        <!-- Section including the different flashcards for phrases -->
         <section class="boxes">
+            <!-- Audio added to buttons on screen -->
+            <!-- Sound sourced from, https://mixkit.co/free-sound-effects/misc/?page=2 -->
+            <audio id="sound1" src="Sound/mixkit-water-bubble-1317.wav" preload="auto"></audio>
+            <audio id="sound2" src="Sound/mixkit-set-down-jelly-jar-3148.wav" preload="auto"></audio>
+            <audio id="sound3" src="Sound/mixkit-water-drop-splashes-in-cave-3179.wav" preload="auto"></audio>
             <div class="main_container">
                 <div class="box1" id="box_1">
                     <h2>I am</h2>
                     <p>
                         <br>
+                        <!-- Images sourced from https://www.enchantedlearning.com/Spanish/ -->
                         <img src="Images/phrases/called.gif" id="ape">
                         <br>
                         <br>
                     </p>
+                    <!-- Different buttons shown to the user -->
                     <button id="submit" onclick="answer()"> Show Answer</button>
                     <button id="hide" onclick="hide()"> Hide Answer</button>
                     <button id="next" onclick="next()"> Next Flashcard</button>
+                    <!-- Correct answer -->
                     <div id="answer">
                         <br>
                         <h2>Estoy / Yo Soy</h2>
                         <br>
                     </div>
+                    <!-- Hint button included, with the hint being stored in tooltiptext -->
                     <div class="tooltip">
                         <button id="hint"> Hint</button>
-                        <span class="tooltiptext">Yo...</span>
+                        <span class="tooltiptext">Yo _ _ _</span>
                     </div>
                 </div>
                 <div class="box2" id="box_2">
@@ -70,6 +83,10 @@
                         <h2>Como?</h2>
                         <br>
                     </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">_ _ _ _</span>
+                    </div>
                 </div>
                 <div class="box3" id="box_3">
                     <h2>Happy Birthday</h2>
@@ -86,6 +103,10 @@
                         <br>
                         <h2>Feliz Cumpleanos</h2>
                         <br>
+                    </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Feliz </span>
                     </div>
                 </div>
             </div>
@@ -109,6 +130,10 @@
                         <h2>Buenos Dias</h2>
                         <br>
                     </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Dias</span>
+                    </div>
                 </div>
                 <div class="box2" id="box_5">
                     <h2>Goodnight</h2>
@@ -125,6 +150,10 @@
                         <br>
                         <h2>Buenas Noches</h2>
                         <br>
+                    </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Noches</span>
                     </div>
                 </div>
                 <div class="box3" id="box_6">
@@ -164,6 +193,10 @@
                         <h2>Hablas ingles?</h2>
                         <br>
                     </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Ingles?</span>
+                    </div>
                 </div>
                 <div class="box2" id="box_8">
                     <h2>I love you</h2>
@@ -181,6 +214,10 @@
                         <h2>Te amo</h2>
                         <br>
                     </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Te _ _ _</span>
+                    </div>
                 </div>
                 <div class="box3" id="box_9">
                     <h2>Pleased to meet you</h2>
@@ -197,6 +234,10 @@
                         <br>
                         <h2>Encantado de conocerle</h2>
                         <br>
+                    </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Encantado</span>
                     </div>
                 </div>
             </div>
@@ -219,6 +260,10 @@
                         <h2>Que hora es?</h2>
                         <br>
                     </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">hora</span>
+                    </div>
                 </div>
                 <div class="box2" id="box_11">
                     <h2>I have</h2>
@@ -236,6 +281,10 @@
                         <h2>Yo tengo</h2>
                         <br>
                     </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">Yo _ _ _ _ _</span>
+                    </div>
                 </div>
                 <div class="box3" id="box_12">
                     <h2>Where are you from?</h2>
@@ -252,6 +301,10 @@
                         <br>
                         <h2>De donde eres?</h2>
                         <br>
+                    </div>
+                    <div class="tooltip">
+                        <button id="hint"> Hint</button>
+                        <span class="tooltiptext">De donde </span>
                     </div>
                 </div>
             </div>
