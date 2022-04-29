@@ -1,3 +1,6 @@
+/* Author: Sergio Rodriguez Chavez */
+
+/* Design for hint button  */
 #hint {
     text-align: center;
     width: 70px;
@@ -6,7 +9,7 @@
     background-color: #ebbe9c;
 }
 
-
+/* Hint button design for hiding the text stored */
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
@@ -15,7 +18,7 @@
     text-align: center;   
 }
 
-  /* Show the tooltip text when you mouse over the tooltip container */
+  /* Show the hint text when mouse hovers the hint button */
 .tooltip:hover .tooltiptext {
     visibility: visible;
 }

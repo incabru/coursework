@@ -1,3 +1,5 @@
+/* Author: Sergio Rodriguez Chavez */
+
 .boxes .main_container {
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,8 @@
 .animals_list ul, .verbs_list ul{
     column-count: 2;
 }
+
+/* List items aligned to the left of the box */
 .animals_list li, .verbs_list li {
     text-align: left;
 }

@@ -1,18 +1,24 @@
-// @author: Sergio Rodriguez Chavez  
+// @Author: Sergio Rodriguez Chavez  
 
 
 // 1st Flashcard
+// Code makes the answer visible
+// Sound is played when the show answer button is pressed
 function answer() {
     document.getElementById('answer').style.visibility = 'visible';
     document.getElementById('sound2').play();
     
 }
 
+// Code hides the answer shown on screen 
+// Sound is played when the hide button is pressed
 function hide() {
     document.getElementById('answer').style.visibility = 'hidden';
     document.getElementById('sound3').play();
 }
 
+// Code hides the previous flashcard shown and displays the next flashcard
+// Sound is played when the next button is pressed
 function next() {
     document.getElementById('box_2').style.display = 'block';
     document.getElementById('box_1').style.display = 'none';

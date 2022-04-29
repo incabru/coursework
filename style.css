@@ -1,3 +1,7 @@
+/* Author: Sergio Rodriguez Chavez */
+
+
+/* Font imported from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap');
 
 *{
@@ -12,33 +16,36 @@ body {
     font-size: 20px;
 }
 
-/* Navigation bar design including the list*/
+/* Navigation bar design including background and color of text*/
 .navbar{
     background-color: white;
     color: black;
 }
 
-.navbar a {
-    text-decoration: solid;
-    font-size: 20px;
-    font-weight: bold;
-}
+/* Navigation bar design  */
 .navbar_container {
     display: flex;
     align-items: center;
 }
 
+/* Navigation bar design for list */
 .navbar_container ul {
     display: flex;
 }
-.navbar_container ul li {
+
+/* Navigation bar design for list contents */
+.navbar_container ul li  {
     margin: 30px;
     margin-left: 200px;
     list-style: none;
 }
 
+/* Navigation bar design for links inside the list */
 .navbar_container ul li a{
     color: black;
+    text-decoration: solid;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Background for the header, that includes the logo */
@@ -60,6 +67,7 @@ body {
     width: fit-content;
 }
 
+/* Design for main box  */
 .boxes .main_container {
     display: flex;
     justify-content: space-between;
@@ -69,7 +77,6 @@ body {
 .introduction, .benefits, .goals {
     flex: 1;
     background: #f89142;
-    /* background: #ffa600ec; */
     text-align: center;
     align-items: center;
     border-style: dashed;
@@ -83,6 +90,7 @@ body {
     text-align: left;
 }
 
+/* Design code for seperate boxes  */
 .boxes_two {
     background-color: #f97a17;
     color: black;
@@ -90,7 +98,7 @@ body {
     padding: 40px;
 }
 
-
+/* Design code for separate boxes, distinct bakcground and border style  */
 .categories_home, .benefits1, .goals1 {
     flex: 1; 
     background: white;
@@ -102,6 +110,7 @@ body {
     padding: 40px 40px;
 }
 
+/* Design for list under categories  */
 .categories_home ul {
     columns: 2;
     text-align: center;

@@ -1,4 +1,7 @@
+/* Author: Sergio Rodriguez Chavez */
 
+
+/* Design for each individual flashcard created */
 .box1, .box2, .box3 {
     flex: 1;
     background: #f89142;
@@ -11,10 +14,12 @@
     border-style: solid;
 }
 
+/* Flashcards have specific tags, display is none and only shows when the next flashcard button is pressed */
 #box_2, #box_3, #box_4, #box_5, #box_6, #box_7, #box_8, #box_9, #box_10, #box_11, #box_12  {
     display: none;
 }
 
+/* Design for main box containing flashcards, centering the flashcards in the center of the screen */
 .boxes .main_container, .boxes2 .main_container2, .boxes3 .main_container3, .boxes4 .main_container4 {
     display: flex;
     justify-content: center;
@@ -22,8 +27,9 @@
     width: 1000px;
     margin-left: 400px;
 
-}
+} 
 
+/* Design for the buttons  */
 #button, #submit, #hide, #next {
     text-align: center;
     border-radius: 10px;
@@ -31,14 +37,17 @@
     background-color: #ebbe9c;
 }
 
+/* Design for when user hovers over buttons */
 #submit:hover, #hide:hover, #next:hover {
     transform: scale(1.2);
 }
 
+/* Hiding the answers that will only be shown if the show answer button is pressed */
 #answer, #answer2, #answer3, #answer4, #answer5, #answer6, #answer7, #answer8, #answer9, #answer10, #answer11, #answer12  {
     visibility: hidden;
 }
 
+/* Changing the height of the image tagged ape */
 #ape {
     height: 80px;
 }
